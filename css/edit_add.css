@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::selection {
+    background-color: coral;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* HEADER */
+
+.navbar .navbar-brand {
+    transition: all 0.5s ease;
+}
+
+.navbar .navbar-brand:hover {
+    transition: all 0.5s ease;
+    background: linear-gradient(to right, skyblue, indigo);
+    background: -webkit-linear-gradient(to right, skyblue, indigo);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar .navbar-nav .nav-item .login {
+    border-radius: 0.5rem;
+    transition: all 0.5s 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-item .login:hover {
+    background-color: #fd7e14;
+    transition: all 0.5s ease-in-out;
+    border-radius: 1rem;
+}
+
+.navbar .navbar-nav .nav-item .login:hover span {
+    letter-spacing: .8px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.navbar .navbar-nav .nav-item.item {
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-item.item::after {
+    opacity: 0;
+    content: '';
+    display: block;
+    border-bottom: 2px solid black;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 0.2rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-item.item:hover::after {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-item.item:hover {
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-item .login svg {
+    width: 1.15rem;
+}
+
+/* HEADER */
+
+/* EXCEPT HEADER */
+
+@media (max-width:1200px) {
+
+    .navbar .navbar-nav .nav-item {
+        text-align: center;
+    }
+
+    .navbar .navbar-nav .nav-item .login {
+        justify-content: center;
+    }
+}
+
+@media (max-width:990px) {
+    .navbar .navbar-nav .nav-item.item {
+        margin: 0.5rem 0;
+    }
+}
+
+/* EXCEPT HEADER */
+
+/* CONTENT 1 */
+
+.c1-luar .c1-dalam .c1-konten a {
+    text-decoration: none;
+    margin-left: 85%;
+}
+
+.c1-luar .c1-dalam .c1-konten svg {
+    width: 1.15rem;
+    filter: invert(1);
+}
+
+/* CONTENT 1 */
+
+/* EXCEPT CONTENT 1 */
+
+@media (max-width: 1200px) {
+    .c1-luar .c1-dalam .c1-konten a {
+        margin-left: 78%;
+    }
+}
+
+@media (max-width: 800px) {
+    .c1-luar .c1-dalam .c1-konten a {
+        margin-left: 12%;
+    }
+}
+
+/* EXCEPT CONTENT 1 */
+
+/* CONTENT 2 */
+
+.c1-edit-add-luar .c1-edit-add-dalam .c1-edit-add-konten .isi-konten-akses-data {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 2rem 0;
+    border-radius: 20px;
+}
+
+.c1-edit-add-luar .c1-edit-add-dalam .c1-edit-add-konten .isi-konten-akses-data .judul {
+    width: 75%;
+    padding: 0.1rem 0;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    color: black;
+    background-color: white;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    transition: all 0.5s ease-in-out;
+}
+
+.c1-edit-add-luar .c1-edit-add-dalam .c1-edit-add-konten .isi-konten-akses-data .judul:hover {
+    color: white;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.c1-edit-add-luar .c1-edit-add-dalam .c1-edit-add-konten .isi-konten-akses-data .form-label {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+}
+
+.c1-edit-add-luar .c1-edit-add-dalam .c1-edit-add-konten .isi-konten-akses-data .form-control {
+    border: 0;
+    border-bottom: 1.5px solid black;
+    border-radius: 0;
+}
+
+.c1-edit-add-luar .c1-edit-add-dalam .c1-edit-add-konten .isi-konten-akses-data .form-select {
+    box-shadow: none;
+    border-color: black;
+}
+
+.c1-edit-add-luar .c1-edit-add-dalam .c1-edit-add-konten .isi-konten-akses-data .form-control.teks {
+    border: 1.5px solid black;
+}
+
+.c1-edit-add-luar .c1-edit-add-dalam .c1-edit-add-konten .isi-konten-akses-data .form-control:active,
+.c1-edit-add-luar .c1-edit-add-dalam .c1-edit-add-konten .isi-konten-akses-data .form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.c1-edit-add-luar .c1-edit-add-dalam .c1-edit-add-konten .isi-konten-akses-data .tbl-eksekusi button {
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.c1-edit-add-luar .c1-edit-add-dalam .c1-edit-add-konten .isi-konten-akses-data .tbl-eksekusi:hover button {
+    border-radius: 11px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* CONTENT 2 */
+
+/* FOOTER */
+
+.foo-luar .foo-dalam {
+    display: block;
+    color: black;
+    background-color: white;
+    font-weight: 500;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    transition: all 0.5s ease-in-out;
+    cursor: default;
+}
+
+.foo-luar .foo-dalam:hover {
+    display: inline-block;
+    color: white;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+/* FOOTER */
